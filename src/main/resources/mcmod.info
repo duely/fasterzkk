@@ -1,0 +1,21 @@
+[
+  {
+    "modid": "fasterzkk",
+    "name": "Faster, ZAWA! KILL! KILL!",
+    "description": "Find and eliminate excessive amounts of creatures (mainly from ZAWA).",
+    "version": "${version}",
+    "credits": "Noobanidus",
+    "logoFile": "assets/fasterzkk/textures/logo.png",
+    "mcversion": "${mc_version}",
+    "url": "http://github.com/duely/fasterzkk",
+    "updateUrl": "",
+    "authorList": [
+      "Noobanidus"
+    ],
+    "parent": "",
+    "screenshots": [],
+    "dependencies": [
+      "forge"
+    ]
+  }
+]
