@@ -41,7 +41,7 @@ public class CommandFZKK extends CommandBase {
 
     Object2IntOpenHashMap<ResourceLocation> list = new Object2IntOpenHashMap<>();
     list.defaultReturnValue(0);
-    world.loadedEntityList.stream().map(EntityList::getKey).filter(e -> e.getNamespace().equals("zawa")).forEach(e -> list.put(e, list.getInt(e) + 1));
+    world.loadedEntityList.stream().map(EntityList::getKey).filter(e -> e != null && e.getNamespace().equals("zawa")).forEach(e -> list.put(e, list.getInt(e) + 1));
     Set<ResourceLocation> toCull = new HashSet<>();
     list.forEach((o, i) -> {
       if (i >= 50) {
