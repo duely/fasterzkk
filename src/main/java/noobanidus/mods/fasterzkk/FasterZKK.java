@@ -3,7 +3,6 @@ package noobanidus.mods.fasterzkk;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
-import noobanidus.mods.fasterzkk.commands.CommandOcarina;
 import org.apache.logging.log4j.Logger;
 
 @Mod.EventBusSubscriber
@@ -27,6 +26,6 @@ public class FasterZKK {
 
   @Mod.EventHandler
   public void serverStarting(FMLServerStartingEvent event) {
-    event.registerServerCommand(new CommandOcarina());
+    event.registerServerCommand(new CommandFZKK());
   }
 }
