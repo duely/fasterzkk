@@ -6,7 +6,7 @@ import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import org.apache.logging.log4j.Logger;
 
 @Mod.EventBusSubscriber
-@Mod(modid = FasterZKK.MODID, name = FasterZKK.MODNAME, version = FasterZKK.VERSION)
+@Mod(modid = FasterZKK.MODID, name = FasterZKK.MODNAME, version = FasterZKK.VERSION, serverSideOnly = true, acceptableRemoteVersions = "*")
 @SuppressWarnings("WeakerAccess")
 public class FasterZKK {
   public static final String MODID = "fasterzkk";
